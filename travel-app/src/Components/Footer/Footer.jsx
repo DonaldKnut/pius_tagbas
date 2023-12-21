@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
-import './footer.css';
-import planVideo from '../../Assets/plan.mp4';
-import { FiSend } from 'react-icons/fi';
-import { MdOutlineTravelExplore } from 'react-icons/md';
-import { FiFacebook } from 'react-icons/fi';
-import { FaInstagram } from 'react-icons/fa';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaLinkedin } from 'react-icons/fa6';
-import { FaChevronRight } from 'react-icons/fa6';
+import React, { useEffect } from "react";
+import "./footer.css";
+import video1 from "../../Assets/plan.mp4";
+import { FiSend } from "react-icons/fi";
+import { MdOutlineTravelExplore } from "react-icons/md";
+import { FiFacebook } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
   useEffect(() => {
@@ -21,7 +21,16 @@ const Footer = () => {
   return (
     <section className="footer">
       <div className="videoDiv">
-        <video src={planVideo} muted autoPlay loop type="video/mp4" className="video"></video>
+        {/* <img src={img} alt="" className='imgC' /> */}
+
+        <video
+          src={video1}
+          muted
+          autoPlay
+          loop
+          typeof="video/mp4"
+          className="video"
+        ></video>
       </div>
 
       <div className="setcontent container">
@@ -34,9 +43,15 @@ const Footer = () => {
           </h2>
 
           <div className="inputDiv flex">
-            <input data-aos="fade-up" type="text" placeholder="Enter Email Address" className="input" />
+            <input
+              data-aos="fade-up"
+              type="text"
+              placeholder="Enter Email Address"
+              className="input"
+            />
             <button data-aos="fade-up" className="btn flex" type="submit">
-              SEND<FiSend className="icon" />
+              SEND
+              <FiSend className="icon" />
             </button>
           </div>
         </div>
@@ -59,104 +74,116 @@ const Footer = () => {
               <FaInstagram className="icon" />
               <FaWhatsapp className="icon" />
               <FaXTwitter className="icon" />
+
               <FaLinkedin className="icon" />
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks grid">
+          {/* // group 1 */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="footerLinks grid"
+          >
             <div className="linkGroup">
               <span className="groupTitle">OUR AGENCY</span>
 
-              <ul>
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Services
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Services
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Insurance
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Insurance
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Agencies
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Agencies
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Tourism
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Tourisim
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Payment
-                </li>
-              </ul>
+              <li className="footerlist flex">
+                <FaChevronRight className="icons" />
+                Payment
+              </li>
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="4000" className="footerLinks grid">
+          {/* // group 2 */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="4000"
+            className="footerLinks grid"
+          >
             <div className="linkGroup">
               <span className="groupTitle">PARTNERS</span>
 
-              <ul>
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Bookings
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Bookings
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  trivago
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                trivago
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Wakanow
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Wakanow
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Flynow
-                </li>
+              <li className="footerlist flex">
+                <FaChevronRight className="icon" />
+                Flynow
+              </li>
 
-                <li className="footerlist flex">
-                  <FaChevronRight className="icon" />
-                  Netlify
-                </li>
-              </ul>
+              <li className="footerlist flex">
+                <FaChevronRight className="icons" />
+                Netlify
+              </li>
             </div>
           </div>
 
-          <div data-aos="fade-up" data-aos-duration="5000" className="footerLinks grid">
+          {/* // group 3 */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            className="footerLinks grid"
+          >
             <div className="linkGroup">
               <span className="groupTitle">LAST MINUTE</span>
 
-              <button className="footerButton flex">
+              <li className="footerlist flex">
                 <FaChevronRight className="icon" />
                 London
-              </button>
+              </li>
 
-              <button className="footerButton flex">
+              <li className="footerlist flex">
                 <FaChevronRight className="icon" />
                 Texas
-              </button>
+              </li>
 
-              <button className="footerButton flex">
+              <li className="footerlist flex">
                 <FaChevronRight className="icon" />
                 Canada
-              </button>
+              </li>
 
-              <button className="footerButton flex">
+              <li className="footerlist flex">
                 <FaChevronRight className="icon" />
                 Berlin
-              </button>
+              </li>
 
-              <button className="footerButton flex">
-                <FaChevronRight className="icon" />
+              <li className="footerlist flex">
+                <FaChevronRight className="icons" />
                 Paris
-              </button>
+              </li>
             </div>
           </div>
 
